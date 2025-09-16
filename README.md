@@ -121,3 +121,10 @@ All instructions for the task are located in the `TASK.md` file.
 - If Docker containers fail to start, check that port 5000 is not already in use
 - Run `docker-compose logs` to see detailed error messages
 - If there are any problems preventing you from completing the technical test, please reach out to us
+
+## How to Run
+- Run "pip install requests tqdm pytest"
+- To run the program run "python enrich.py"
+- To run unit tests run "pytest tests/test_enrichment.py" and "pytest tests/test_push.py"
+- Output for run will be to enrich_and_push.log
+- Console will log summary of successes and failures

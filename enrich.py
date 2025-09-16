@@ -80,7 +80,7 @@ def make_session() -> requests.Session:
         total=RETRY_TOTAL,
         backoff_factor=BACKOFF_FACTOR,
         status_forcelist=STATUS_FORCELIST,
-        allowed_methods=["GET", "POST", "PUT", "DELETE", "HEAD", "OPTIONS"],
+        allowed_methods=["GET", "POST"],
         raise_on_status=False,
         respect_retry_after_header=True,
     )
